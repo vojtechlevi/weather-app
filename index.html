@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/091cd25d33.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <div class="location-input">
+          <h3 class="brand">Weather App</h3>
+          <form>
+            <input type="text" placeholder="search" class="search" />
+            <button type="submit" class="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="location-info">
+          <h1 class="temp"></h1>
+          <div class="city-time">
+            <h1 class="name"></h1>
+            <small>
+              <span class="time"></span>
+              -
+              <span class="date"></span>
+            </small>
+            <small>
+              <span class="feel"></span>
+            </small>
+          </div>
+          <div class="condition-info">
+            <img class="weather-icon" alt="" />
+            <span class="condition"></span>
+          </div>
+        </div>
+
+        <div class="details">
+          <h4>Details</h4>
+          <ul>
+            <li>
+              <span>Cloudy</span>
+              <span class="cloud"></span>
+            </li>
+            <li>
+              <span>Humidity</span>
+              <span class="humidity"></span>
+            </li>
+            <li>
+              <span>Wind</span>
+              <span class="wind"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
