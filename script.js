@@ -1,4 +1,4 @@
-const baseUrl = "http://api.weatherapi.com/v1";
+const baseUrl = "https://api.weatherapi.com/v1";
 const apiKey = "02492167b893437783092000232011";
 
 const search = document.querySelector(".search");
@@ -56,12 +56,12 @@ const getCurrentWeather = async () => {
 
   if (data.current.temp_c < 5) {
     getUnsplash(cityName, weatherCondition, cold);
-    details.style.color = "black !important";
   } else {
     getUnsplash(cityName, weatherCondition, warm);
   }
 
   createDetails(data);
+  getWeatherForecast();
 
   const scrollers = document.querySelectorAll(".scroller");
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -150,4 +150,3 @@ const getUnsplash = async (city, condition, temp) => {
 };
 
 getCurrentWeather();
-getWeatherForecast();
